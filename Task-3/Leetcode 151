@@ -1,0 +1,17 @@
+CODE 
+
+class Solution(object):
+    def reverseWords(self, s):
+        data = s.split()[::-1]
+        a =''
+        for i in data:
+            a = a + i + ' '
+        tr = a[:-1]
+        return tr
+
+EXPLNATION
+
+First, s.split() breaks the sentence into words, and [::-1] reverses their order. 
+After that the for loop goes through the reversed words and adds them to a new string with a space after each word. 
+Since this leaves an extra space at the end, a[:-1] removes it. Finally, the reversed sentence is returned.
+
