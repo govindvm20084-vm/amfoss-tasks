@@ -1,1 +1,51 @@
+* Level 1
 
+In level 1, I first explored the directories using ls -la and used cd to navigate to Loguetown Reef and through each of its sectors. 
+I then checked the contents of each Devil Fruit file using cat and found the genuine devil fruit in sector C — devil_fruit_6.txt. 
+Finally, I ran the eat.sh shell script on the correct file to obtain the clue for the next level.
+
+
+* Level 2
+
+In level 2, I explored the files using ls -la and found a shell script called unlock_vault.sh inside the baroque_works_cache directory. 
+I provided the clue I obtained from Level 1 as and used export command and then used the shell command ./unlock_vault.sh. 
+The script generated two files, which I compared using the diff command. 
+By using the diff command on the two files, I was able to find the next clue.
+
+
+
+* Level 3
+
+In Level 3, I first navigated to the Wax_jungle directory and used cd and ls -la to explore the available files and look for the clue, but I couldn't find anything useful. 
+I then followed the hint provided in README.md and checked the available Git branches using git branch -a, where I found the little_garden branch. 
+I switched to this branch using git switch little_garden and checked the contents again using ls -la. This time, I found three directories: sector_alpha, sector_beta, and sector_gamma. 
+I then used find . -type f -name "*.log" -exec md5sum {} \; | sort | uniq -w32 -u to search through the .log files and identify the unique file containing the clue. 
+Finally, I inspected the identified file using cat and found Poneglyph Fragment 1.
+
+find . searches the current directory
+-type f selects files, -name "*.log" finds .log files
+-exec md5sum {} \; calculates the MD5 hash of each file
+| sort sorts the results, 
+uniq -w32 compares the first 32 characters
+
+
+* Level 4
+
+In Level 4, I navigated to the galley_la_company directory inside Water_7 using cd and explored the contents with ls -la. 
+After searching through the directory, I found puffing_tom_blueprints, which appeared to be an unusual file. 
+I used the file command to determine its format and discovered that it was a gzip-compressed archive. 
+I then extracted it using tar -xzf puffing_tom_blueprints, which gave me step1_blueprints.zip.
+I used unzip to extract the ZIP archive and then inspected the extracted file, where I found Poneglyph Fragment 2.
+
+
+
+* Level 5
+
+* Level 6
+
+After cloning the Laugh-Tale-Merge-War repository, I explored all the files and directories using cd and ls -la.
+There were many directories and files, but the treasure directory caught my attention because it contained interesting files.
+I inspected its contents and found two text fragments containing parts of the clue. 
+I then checked the available Git branches and found another branch containing the remaining piece.
+After switching to that branch, I was able to combine the fragments and form the phrase TheGrandLineRemembers. 
+Finally, I ran the victory.sh shell script with the completed phrase and obtained the final output.
