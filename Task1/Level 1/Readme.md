@@ -1,1 +1,0 @@
-In level 1 the commands i used to solve this were cd,ls -la and cat after searching through the files one by one i found the real one in sector C devil_fruit_6.txt and used the shell command eat.sh to get the clue
