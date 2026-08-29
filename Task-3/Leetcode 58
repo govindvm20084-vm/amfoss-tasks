@@ -1,0 +1,11 @@
+CODE 
+
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        sp = s.strip().split()
+        ln = len(sp[-1])
+        return ln
+
+EXPLANATION
+The logic is to first remove any extra spaces from the beginning and end of the string using strip(), and then use split() to separate the string into individual words. 
+sp[-1] gets the last word from the list, and len(sp[-1]) finds the number of characters in that word. Finally, this length is returned as the answer.
