@@ -1,0 +1,16 @@
+CODE 
+
+class Solution:
+    def twoSum(self, nums, target):
+        n = len(nums)
+        for i in range(n):
+            for j in range(i + 1, n):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+
+EXPLANATION
+
+The approach is to check each possible pair of numbers in the list. 
+The first loop selects a number using i, while the second loop selects another number starting from i + 1, so each pair is checked only once. 
+For every pair, their values are added and compared with the target. If the sum matches the target, the indices [i, j] are returned.
