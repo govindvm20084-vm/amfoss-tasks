@@ -1,1 +1,3 @@
-In task 1 i just checked all the directories using ls -la and then used cd to go to Loguetown and all the sectors i checked each devil fruit using cat and found the one with the devil fruit at sector C devil_fruit_6.txt and then i used the eat.sh shell to get the clue. I used the commands cd,ls -la and cat
+In Task 1, I first explored the directories using ls -la and used cd to navigate to Loguetown Reef and through each of its sectors. I then checked the contents of each Devil Fruit file using cat and found the genuine Devil Fruit in Sector C — devil_fruit_6.txt. Finally, I ran the eat.sh shell script on the correct file to obtain the clue for the next stage.
+
+Commands used: cd, ls -la, cat, and ./eat.sh.
