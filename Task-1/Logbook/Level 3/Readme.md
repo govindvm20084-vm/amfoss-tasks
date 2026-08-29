@@ -1,4 +1,5 @@
-In level 3 at first when i checked i didnt find anything so i changed the branch to little_garden and then in which i found three directory sectors alpha beta and gamma i then used find . -type f -name "*.log" -exec md5sum {} \; | sort | uniq -w32 -u
+In Level 3, I initially checked the available files but could not find anything useful. I then switched to the little_garden branch, where I found three directories sector_alpha, sector_beta, and sector_gamma.I then used find . -type f -name "*.log" -exec md5sum {} \; | sort | uniq -w32 -u
+
 The find . searches from current directory 
 -type f only considers the type file 
 -name "*.log" takes the files ending with .log   
@@ -6,4 +7,4 @@ The find . searches from current directory
 | sort will sort the files 
 | uniq -w32 -u  will tell uniq to compare only the first 32 characters — the MD5 hashes.
 
-Using this command i found the file which was had the clue and then i inspected it and found the Poneglyph fragment 1
+Using this command i found the file which had the clue and then i inspected it and found the Poneglyph fragment 1
