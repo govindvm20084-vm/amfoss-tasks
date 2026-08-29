@@ -1,0 +1,18 @@
+CODE 
+
+class Solution:
+    def checkString(self, s):
+        if ("ba" in s):
+            return False
+        else:
+            return True
+        return True
+
+
+EXPLANATION
+
+The idea is to make sure that no b appears before an a in the string. 
+We check whether the substring "ba" exists anywhere using not in. 
+If "ba" is found, it means an a appears after a b, so the condition is false. 
+If "ba" is not found, all the as must come before the bs, so the function returns True. 
+This works because the string only contains a and b.
