@@ -1,1 +1,1 @@
-
+In task 1 i just checked all the directories using ls -la and then used cd to go to Loguetown and all the sectors i checked each devil fruit using cat and found the one with the devil fruit at sector C devil_fruit_6.txt. I used the commands cd,ls -la and cat
