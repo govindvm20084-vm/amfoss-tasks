@@ -1,0 +1,27 @@
+CODE
+
+class Solution:
+    def findPeakElement(self, nums):
+        left = 0
+        right = len(nums) - 1
+
+        while left < right:
+            mid = (left + right) // 2
+
+            if nums[mid] > nums[mid + 1]:
+                right = mid
+            else:
+                left = mid + 1
+
+        return left
+
+
+
+EXPLANATION
+
+The approach is to use binary search to find a peak without checking every element.
+We start with left at the beginning and right at the end of the list. 
+In each step, we find the middle index using mid = (left + right) // 2 and compare nums[mid] with nums[mid + 1]. 
+If nums[mid] is greater, a peak can be on the left side, including mid, so we move right to mid. 
+Otherwise, the values are increasing toward the right, so a peak must exist on the right side and we move left to mid + 1. 
+We keep doing this until left and right become equal, and that index is returned as the peak.
