@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction Gate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="rig">
+	<div class="eyebrow">
+		<span>REACTION GATE</span>
+		<span id="roundLabel">ROUND 0 / 5</span>
+	</div>
+
+	<div class="strip" id="strip">
+		<div class="gate" data-i="0">-</div>
+		<div class="gate" data-i="1">-</div>
+		<div class="gate" data-i="2">-</div>
+		<div class="gate" data-i="3">-</div>
+		<div class="gate" data-i="4">-</div>
+	</div>
+
+	<div class="panel idle" id="panel">
+		<div class="label">Timing gate idle</div>
+		<div class="big">Test your reflexes</div>
+		<div class="sub">5 rounds. Click the instant the gate opens.</div>
+		<button class="startbtn" id="startBtn">Start Game</button>
+	</div>
+
+	<div class="results" id="results">
+		<h2>Run Complete</h2>
+		<div class="rating">
+			<div class="tag" id="ratingTag">-</div>
+			<div class="note" id="ratingNote">-</div>
+		</div>
+		<div class="stat-grid">
+			<div class="stat">
+				<div class="k">Average</div>
+				<div class="v" id="avgVal">-</div>
+			</div>
+			<div class="stat fast">
+				<div class="k">Fastest</div>
+				<div class="v" id="fastVal">-</div>
+			</div>
+			<div class="stat slow">
+				<div class="k">Slowest</div>
+				<div class="v" id="slowVal">-</div>
+			</div>
+			<div class="stat best">
+				<div class="k">Best score</div>
+				<div class="v" id="bestVal">-</div>
+			</div>
+		</div>
+		<div class="newbest" id="newBestNote" style="display:none">New personal best average</div>
+		<br>
+		<button class="again" id="againBtn">Run again</button>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
