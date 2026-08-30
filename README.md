@@ -5,8 +5,7 @@
 Myself Govind VM, a first-year B.Tech Computer Science and Engineering student at Amrita Vishwa Vidyapeetham. I have a strong interest in technology and programming, with experience in Python. I am a hardworking and motivated person who is always willing to learn new skills and take on new challenges. I believe in continuously improving myself, both academically and personally.My goal is to build a strong foundation in computer science, gain practical experience, and become a skilled software professional in the future. I am looking forward to learning, gaining new experiences, and making the most of my college journey at Amrita.
 
 ## Problem I Would Like to Solve
-
-One problem I have noticed is that students often struggle to find people who share the same interests as them. Someone interested in programming, design, robotics, gaming, or other fields may not always know where to find people with similar interests. I would like to help create more opportunities for students to connect, collaborate, and learn from each other. I think this matters because finding the right people can motivate students to explore their interests further and turn individual ideas into something much bigger.
+One problem I have noticed is how difficult it can be to find reliable information online, especially when learning something new. There are so many websites, videos, and posts that it can be hard to know which ones are actually useful or trustworthy. Beginners can end up spending more time searching for the right information than actually learning. I would like to work on a way to make it easier for people to find useful and reliable resources based on what they are trying to learn. I think this matters because having the right information can save time and make learning much easier.
 
 ## Something I Have Learned Outside the Classroom
 
