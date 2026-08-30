@@ -4,6 +4,30 @@ In level 1, I first explored the directories using ls -la and used cd to navigat
 I then checked the contents of each Devil Fruit file using cat and found the genuine devil fruit in sector C — devil_fruit_6.txt. 
 Finally, I ran the eat.sh shell script on the correct file to obtain the clue for the next level.
 
+Clue found at level 1 :
+
+
+
+------------------------------------------------------------
+
+*** CRUNCH! ***
+
+The fruit tastes absolutely terrible...
+
+Reality begins to fracture.
+
+Forgotten histories rush into your mind.
+
+You have awakened the legendary...
+
+          Gito Gito no Mi
+
+AWAKENING_SIGNATURE:
+
+ONE_PIECE{GITO_GITO_NO_AWAKENING}
+------------------------------------------------------------
+
+
 
 * Level 2
 
@@ -11,6 +35,13 @@ In level 2, I explored the files using ls -la and found a shell script called un
 I provided the clue I obtained from Level 1 as and used export command and then used the shell command ./unlock_vault.sh. 
 The script generated two files, which I compared using the diff command. 
 By using the diff command on the two files, I was able to find the next clue.
+
+
+Clue found at level 2 :
+
+< BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
+---
+> LOG_STREAM_ENTRY_SECURE_NODE_042_VALID
 
 
 
@@ -29,6 +60,25 @@ find . searches the current directory
 uniq -w32 compares the first 32 characters
 
 
+Clue found at level 3:
+
+ECURITY LOG ACCESS // LEVEL 3 CLEARANCE REQUIRED
+-------------------------------------------------
+STATUS: METALLIC WAX SUIT ACTIVE
+
+SECURITY_TAG:
+QkFST1FVRV9ESUFMe1NQTElUX1RJTUVMSU5FX01JU0RJUkVDVElPTn0K
+
+-------------------------------------------------
+
+BAROQUE WORKS EXECUTIVE REPORT
+
+PONEGLYPH_FRAGMENT_I = "KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnL"
+
+-------------------------------------------------
+
+
+
 * Level 4
 
 In Level 4, I navigated to the galley_la_company directory inside Water_7 using cd and explored the contents with ls -la. 
@@ -39,7 +89,31 @@ I used unzip to extract the ZIP archive and then inspected the extracted file, w
 
 
 
+Clue found at level 4 :
+
+
+PONEGLYPH_FRAGMENT_II="SwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIzA="
+
+
+
 * Level 5
+
+In Level 5, I began by navigating to the Enies_Lobby directory and using ls -la to inspect its contents. 
+However, I could not find any useful files or clues there, so I followed the information from the previous level and switched to the alternate_timeline branch. After switching branches, I discovered two important files: vault_3 and poneglyph.py.
+I inspected vault_3 using cat, but it turned out to be a decoy and did not contain the actual clue.
+I then executed the Python script using python3 poneglyph.py.
+Following the hint provided in the README.md, I combined the Poneglyph fragments that I had collected from the previous levels. 
+This revealed the information needed to proceed to the next stage and it gave me the link for level 6.
+
+
+Clue found at level 5 :
+
+
+Prize : 
+https://github.com/rogueone-x/Laugh-Tale-Merge-War
+
+
+
 
 * Level 6
 
@@ -49,3 +123,58 @@ I inspected its contents and found two text fragments containing parts of the cl
 I then checked the available Git branches and found another branch containing the remaining piece.
 After switching to that branch, I was able to combine the fragments and form the phrase TheGrandLineRemembers. 
 Finally, I ran the victory.sh shell script with the completed phrase and obtained the final output.
+
+
+Final output :
+
+
+==============================
+ Verifying Timeline Integrity 
+==============================
+
+Enter the Pirate King's Password: TheGrandLineRemembers
+Timeline Integrity ............. OK
+Merge Conflict ................. Resolved
+Repository ..................... Restored
+History ........................ Preserved
+
+====================================================
+
+        THE ONE PIECE HAS BEEN FOUND
+
+====================================================
+
+Congratulations, Captain.
+
+The greatest treasure was never gold.
+
+It was the ability to understand,
+recover,
+and preserve history.
+
+Today you have mastered:
+
+⚓ Linux
+⚓ Git
+⚓ Problem Solving
+
+FLAG{The_Grand_Line_Remembers_Your_Commit}
+
+====================================================
+
+🏴 REWARD UNLOCKED
+
+Title:
+    Pirate King of Git
+
+Badge:
+    👑 Keeper of History
+
+Your bounty has increased to
+
+    5,600,000,000 ฿
+
+The Thousand Sunny will always have a place for you.
+
+Now go write your own history.
+
