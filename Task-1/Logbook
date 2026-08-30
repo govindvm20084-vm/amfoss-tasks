@@ -85,7 +85,8 @@ In Level 4, I navigated to the galley_la_company directory inside Water_7 using 
 After searching through the directory, I found puffing_tom_blueprints, which appeared to be an unusual file. 
 I used the file command to determine its format and discovered that it was a gzip-compressed archive. 
 I then extracted it using tar -xzf puffing_tom_blueprints, which gave me step1_blueprints.zip.
-I used unzip to extract the ZIP archive and then inspected the extracted file, where I found Poneglyph Fragment 2.
+I used unzip to extract the ZIP archive and then i got a directory called blueprints_extracted.
+After inspecting the directory i found secret_link.txt where I found Poneglyph Fragment 2.
 
 
 
